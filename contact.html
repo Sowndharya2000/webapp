@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sowndharya</title>
+</head>
+<body>
+    <style>
+        body{
+            width:100%;
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color:#fff ;
+            background:lightpink ;
+        }
+        .contact-container{
+            max-width:960px;
+            margin:auto;
+            width:100%;
+            display:grid ;
+            grid-template-columns: repeat(2,1fr);
+            gap:1.5rem;
+            background:#363953 ;
+            box-shadow:0 0 1rem hsla(0 0 0/16%) ;
+            border-radius:0.5rem ;
+            overflow:hidden;
+        }
+
+        .form-container{
+            padding:20px;
+        }
+        .form-container h3{
+            font-size:1.2rem ;
+            font-weight:600;
+            margin-bottom: 1rem;
+
+        }
+        .contact-form{
+            display: grid;
+            row-gap:1rem;
+        }
+        .contact-form input,.contact-form textarea{
+            width:100%;
+            border:none;
+            outline:none;
+            background:#2c2f48 ;
+            padding:10px;
+            font-size:0.9rem ;
+            color:#fff;
+            border-radius:0.4rem ;
+
+
+        }
+        .contact-form textarea{
+            resize:none;
+            height:200px;
+
+        }
+        .contact-form .send-button{
+            border:none;
+            outline: none;
+            background:#00dbde; 
+            font-size:1rem ;
+            font-weight: 500;
+            text-transform: uppercase;
+            cursor:pointer;
+            
+
+        }
+        .contact-form.send-button:hover{
+            transition:0.3s all linear ;
+            background: hsl(181,100%,44% 0.8);
+        }
+        .map iframe{
+            width:100%;
+            height:100%;
+
+
+        }
+        @media (max-width:964px){
+            .contact-container{
+                margin:0 auto ;
+                width:90%;
+            }
+
+        }
+        @media (max-width:700px){
+            .contact-container{
+                grid-template-columns:1fr;
+                gap:1rem;
+                margin-top:2orem !important ;
+        }
+        .map iframe{
+            height:400px ;
+        }
+    }
+
+
+    
+  </style>
+
+        <div class="contact-container">
+            <div class="form-container">
+                <h3>Message us</h3>
+                <form action=""class="contact-form">
+                    <input type="text" placeholder="your name" required>
+                    <input type="email"name=""id=""placeholder="Enter your email"required>
+                    <textarea name=""id=""cols="30"rows="10" placeholder="write Message Here" required></textarea>
+                    <input type="submit" value="send"class="send-button">
+                </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.2310658522!2d79.87933474107953!3d13.047985943115949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1722437493605!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+        </div>
+         
+
+    
+</body>
+</html>
